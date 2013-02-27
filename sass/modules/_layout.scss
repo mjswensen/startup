@@ -1,0 +1,29 @@
+/**
+ * Grid layouts. Based on ideas from the 960 grid system (See http://960.gs), 
+ * though any width and number of columns can be used by altering
+ * _variables.scss.
+ */
+
+.fixed {
+  width: $grid-fixed-width;
+  margin: 0 auto;
+  .grid-container {
+    @extend .clearfix;
+    $i: 1;
+    @while $i <= $grid-num-columns {
+      .col-#{$i} {
+        @extend .pull-left;
+        margin: 0 $grid-gutter-width;
+        width: $i * $grid-column-width-with-gutter - $grid-gutter-width * 2;
+      }
+      .offset-#{$i} {
+        padding-left: $i * $grid-column-width-with-gutter;
+      }
+      $i: $i + 1;
+    }
+  }
+}
+
+.fluid {
+  // TODO
+}

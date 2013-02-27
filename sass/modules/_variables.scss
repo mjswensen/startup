@@ -1,0 +1,21 @@
+// Color scheme
+
+$transparent-black: rgba(255,255,255,0.1);
+$transparent-white: rgba(0,0,0,0.1);
+$translucent-black: rgba(0,0,0,0.5);
+$translucent-white: rgba(255,255,255,0.5);
+$opaque-black: rgba(0,0,0,0.9);
+$opaque-white: rgba(255,255,255,0.9);
+
+// Typography
+
+$base-font-size: 16px;
+$base-line-height: 22px;
+
+// Layout and grid, see _layouts.scss
+
+$grid-fixed-width: 960px;
+$grid-num-columns: 12;
+$grid-column-width-with-gutter: ($grid-fixed-width / $grid-num-columns);
+$grid-gutter-width: 10px;
+$grid-column-width: $grid-column-width-with-gutter - ($grid-gutter-width * 2);
