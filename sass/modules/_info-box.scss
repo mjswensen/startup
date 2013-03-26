@@ -1,6 +1,27 @@
 .info-box {
-  
+  border: 1px solid $gray;
+  @include border-radius($small-border-radius);
+  background-color: $gray-lighter;
+  padding: 2em 1em 1em;
+  position: relative;// For positioning context
   h1,h2,h3,h4,h5,h6 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: -1px 0 1em -1px;
+    padding: 0.25em;
+    display: inline-block;
+    font-size: 1em;
+    line-height: 1em;
+    text-transform: uppercase;
+    border: 1px solid $gray;
+    @include border-radius($small-border-radius);
+    background-color: $gray-light;
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+  &.info-box-success {
     
   }
 }

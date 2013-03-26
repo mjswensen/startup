@@ -1,0 +1,59 @@
+/**
+ * Typography
+ */
+
+// Import a few fonts from Google
+@import url("http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic,700italic|Titillium+Web:300,600");
+
+body {
+  font-size: $base-font-size;
+  font-family: $sans-serif-secondary;
+}
+
+// Headings
+
+h1 {
+  font-size: 3em;
+  line-height: $base-line-height * 2;
+}
+
+h2 {
+  font-size: 2em;
+  line-height: $base-line-height * 2;
+}
+
+h3 {
+  font-size: 1.5em;
+  line-height: $base-line-height * 2;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+h6 {
+  font-size: 0.8em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: ($base-line-height / 2) 0;
+  font-family: $sans-serif-primary;
+  color: $heading-color;
+  font-weight: 600;
+  small {
+    font-weight: 300;
+    color: $subheading-color;
+  }
+}
+
+// Body copy
+
+p {
+  line-height: $base-line-height;
+  margin: 0 0 ($base-line-height / 2);
+  color: $text-color;
+}

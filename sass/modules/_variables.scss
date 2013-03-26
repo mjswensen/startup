@@ -1,13 +1,30 @@
 // Color scheme
 
-$transparent-black: rgba(255,255,255,0.1);
-$transparent-white: rgba(0,0,0,0.1);
+$black: #000000;
+$gray-darker: #222222;
+$gray-dark: #333333;
+$gray: #555555;
+$gray-light: #999999;
+$gray-lighter: #eeeeee;
+$white: #ffffff;
+
+$transparent-black: rgba(0,0,0,0.1);
+$transparent-white: rgba(255,255,255,0.1);
 $translucent-black: rgba(0,0,0,0.5);
 $translucent-white: rgba(255,255,255,0.5);
 $opaque-black: rgba(0,0,0,0.9);
 $opaque-white: rgba(255,255,255,0.9);
 
+$background-color: $white;
+$text-color: $gray-darker;
+$heading-color: $gray-dark;
+$subheading-color: $gray-light;
+
 // Typography
+
+$sans-serif-primary: "Titillium Web", Arial, sans-serif;
+$sans-serif-secondary: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$monospaced: "Ubuntu Mono", "Courier New", monospace;
 
 $base-font-size: 16px;
 $base-line-height: 22px;
@@ -19,3 +36,7 @@ $grid-num-columns: 12;
 $grid-column-width-with-gutter: ($grid-fixed-width / $grid-num-columns);
 $grid-gutter-width: 10px;
 $grid-column-width: $grid-column-width-with-gutter - ($grid-gutter-width * 2);
+
+// Misc.
+
+$small-border-radius: 2px;

@@ -2,9 +2,20 @@
  * This file loads all modules, managing dependencies.
  */
 
+// Reset
 @import "compass/reset";
 
+// Compass modules
+@import "compass/css3/border-radius";
+
+// Low level
 @import "modules/utilities";
 @import "modules/variables";
+@import "modules/typography";
 @import "modules/layout";
+
+// Mid level
+@import "modules/base";
+
+// High level
 @import "modules/info-box";
