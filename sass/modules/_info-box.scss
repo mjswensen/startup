@@ -3,8 +3,9 @@
   @include border-radius($small-border-radius);
   background-color: $gray-lighter;
   padding: 2em 1em 1em;
+  margin-bottom: $grid-gutter-width;
   position: relative;// For positioning context
-  h1,h2,h3,h4,h5,h6 {
+  .info-box-title {
     position: absolute;
     left: 0;
     top: 0;
@@ -13,7 +14,6 @@
     display: inline-block;
     font-size: 1em;
     line-height: 1em;
-    text-transform: uppercase;
     border: 1px solid $gray;
     @include border-radius($small-border-radius);
     background-color: $gray-light;
@@ -21,7 +21,7 @@
   p:last-child {
     margin-bottom: 0;
   }
-  &.info-box-success {
+  &.info-box-red {
     
   }
 }

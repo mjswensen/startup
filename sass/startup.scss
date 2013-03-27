@@ -7,6 +7,7 @@
 
 // Compass modules
 @import "compass/css3/border-radius";
+@import "compass/css3/background-clip";
 
 // Low level
 @import "modules/utilities";
@@ -18,4 +19,6 @@
 @import "modules/base";
 
 // High level
+@import "modules/header-bar";
 @import "modules/info-box";
+@import "modules/misc";

@@ -1,0 +1,44 @@
+/**
+ * Header bar
+ */
+
+.header {
+  border-bottom-width: 0.25em;
+  border-bottom-style: solid;
+  background-color: $gray;
+  border-bottom-color: $gray-light;
+  padding: 10px;
+  @include background-clip();
+  h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    color: $white;
+  }
+  &.header-red {
+    background-color: $red;
+    border-bottom-color: transparentize($red, 0.5);
+  }
+  &.header-orange {
+    background-color: $orange;
+    border-bottom-color: transparentize($orange, 0.5);
+  }
+  &.header-yellow {
+    background-color: $yellow;
+    border-bottom-color: transparentize($yellow, 0.5);
+  }
+  &.header-green {
+    background-color: $green;
+    border-bottom-color: transparentize($green, 0.5);
+  }
+  &.header-blue {
+    background-color: $blue;
+    border-bottom-color: transparentize($blue, 0.5);
+  }
+  &.header-purple {
+    background-color: $purple;
+    border-bottom-color: transparentize($purple, 0.5);
+  }
+  &.header-pink {
+    background-color: $pink;
+    border-bottom-color: transparentize($pink, 0.5);
+  }
+}
