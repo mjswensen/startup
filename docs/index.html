@@ -1,23 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>startup - Frontend Framework for Rapid Web Application Development</title>
+    <title>startup - A Robust CSS Starter Kit</title>
     <link rel="stylesheet" href="../css/startup.css">
   </head>
   <body>
     <header class="header header-red">
       <div class="fixed">
         <div class="grid-container">
-          <div class="col-6">
-            <h1>startup</h1>
-          </div>
-          <div class="col-6">
-            <nav class="nav">
-              <ul>
-                <li>Test</li>
-                <li>Test2</li>
-              </ul>
-            </nav>
+          <div class="col-12">
+            <h1>startup <small>a robust CSS starter kit</small></h1>
           </div>
         </div>
       </div>
@@ -25,8 +17,7 @@
     <div class="fixed">
       <div class="grid-container">
         <div class="col-2">
-          <h2>Sidebar</h2>
-          <p>Column 1</p>
+          <h2>Contents</h2>
           <ul>
             <li><a href="#typography">Typography</a></li>
             <li><a href="#layout">Layout</a></li>
@@ -34,7 +25,7 @@
         </div>
         <div class="col-7">
           <div class="page-heading">
-            <h1>Typography<a id="typography"></a></h1>
+            <h1><a id="typography"></a>Typography</h1>
           </div>
           <div class="info-box">
             <h3 class="info-box-title">Headings</h3>
@@ -45,14 +36,23 @@
             <h5>Heading Level 5</h5>
             <h6>Heading Level 6</h6>
           </div>
-          <!-- Example code here -->
-          <p>Add class <code>all-caps</code> to any heading or text.</p>
-          <div class="info-box">
+          <p>Add a subheading simply with <code>&lt;small&gt;</code>.</p>
+          <div class="info-box append-next">
+            <h3 class="info-box-title">Subheadings</h3>
+            <h2>Heading <small>Subheading</small></h2>
+          </div>
+          <div class="info-box without-title">
+            <pre><code>&lt;h2&gt;Heading &lt;small&gt;Subheading&lt;/small&gt;&lt;/h2&gt;</code></pre>
+          </div>
+          <p>Add <code>all-caps</code> class to any heading or text.</p>
+          <div class="info-box append-next">
             <h3 class="info-box-title">All Caps</h3>
             <h3 class="all-caps">Heading Level 3</h3>
           </div>
-          <!-- Example code here -->
-          <hr>
+          <div class="info-box without-title">
+            <pre><code>&lt;h3 class="all-caps"&gt;Heading Level 3&lt;/h3&gt;</code></pre>
+          </div>
+          <hr class="hr-red">
           <p>Column 2. This column has an info box:</p>
           <div class="info-box">
             <h3 class="info-box-title">Tangent</h3>
@@ -60,8 +60,18 @@
           </div>
         </div>
         <div class="col-3">
-          <h2>Sidebar</h2>
-          <p>Column 3</p>
+          <h2>Try It</h2>
+          <!-- TODO: icon font checkmark with selected theme -->
+          <ul class="unstyled">
+            <li><a href="#">Plain</a></li>
+            <li><a href="#">Red</a></li>
+            <li><a href="#">Orange</a></li>
+            <li><a href="#">Yellow</a></li>
+            <li><a href="#">Green</a></li>
+            <li><a href="#">Blue</a></li>
+            <li><a href="#">Purple</a></li>
+            <li><a href="#">Pink</a></li>
+          </ul>
         </div>
       </div>
     </div>

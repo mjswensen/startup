@@ -30,6 +30,39 @@ $blue: #2c7fb3;
 $purple: #6526a6;
 $pink: #d237ba;
 
+// Derivatives of accent colors
+
+// TODO: figure out a good way to do this.
+$red-lightness: lightness($red);
+$orange-lightness: lightness($orange);
+$yellow-lightness: lightness($yellow);
+$green-lightness: lightness($green);
+$blue-lightness: lightness($blue);
+$purple-lightness: lightness($purple);
+$pink-lightness: lightness($pink);
+
+$red-lighter: lighten($red, ($red-lightness * 0.9));
+$red-light: lighten($red, 15%);
+$red-dark: darken($red, 50%);
+$orange-lighter: lighten($orange, ($orange-lightness * 0.9));
+$orange-light: lighten($orange, 15%);
+$orange-dark: darken($orange, 50%);
+$yellow-lighter: lighten($yellow, ($yellow-lightness * 0.9));
+$yellow-light: lighten($yellow, 15%);
+$yellow-dark: darken($yellow, 50%);
+$green-lighter: lighten($green, ($green-lightness * 0.9));
+$green-light: lighten($green, 15%);
+$green-dark: darken($green, 50%);
+$blue-lighter: lighten($blue, ($blue-lightness * 0.9));
+$blue-light: lighten($blue, 15%);
+$blue-dark: darken($blue, 50%);
+$purple-lighter: lighten($purple, ($purple-lightness * 0.9));
+$purple-light: lighten($purple, 15%);
+$purple-dark: darken($purple, 50%);
+$pink-lighter: lighten($pink, ($pink-lightness * 0.9));
+$pink-light: lighten($pink, 15%);
+$pink-dark: darken($pink, 50%);
+
 // Typography
 
 $sans-serif-primary: "Titillium Web", Arial, sans-serif;

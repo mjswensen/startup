@@ -12,33 +12,37 @@
   h1,h2,h3,h4,h5,h6 {
     margin: 0;
     color: $white;
+    small {
+      color: $white;// For IE8
+      color: $translucent-white;
+    }
   }
   &.header-red {
     background-color: $red;
-    border-bottom-color: transparentize($red, 0.5);
+    border-bottom-color: $red-light;
   }
   &.header-orange {
     background-color: $orange;
-    border-bottom-color: transparentize($orange, 0.5);
+    border-bottom-color: $orange-light;
   }
   &.header-yellow {
     background-color: $yellow;
-    border-bottom-color: transparentize($yellow, 0.5);
+    border-bottom-color: $yellow-light;
   }
   &.header-green {
     background-color: $green;
-    border-bottom-color: transparentize($green, 0.5);
+    border-bottom-color: $green-light;
   }
   &.header-blue {
     background-color: $blue;
-    border-bottom-color: transparentize($blue, 0.5);
+    border-bottom-color: $blue-light;
   }
   &.header-purple {
     background-color: $purple;
-    border-bottom-color: transparentize($purple, 0.5);
+    border-bottom-color: $purple-light;
   }
   &.header-pink {
     background-color: $pink;
-    border-bottom-color: transparentize($pink, 0.5);
+    border-bottom-color: $pink-light;
   }
 }
