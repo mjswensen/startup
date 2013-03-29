@@ -44,17 +44,18 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $sans-serif-primary;
   color: $heading-color;
   font-weight: 600;
-  a {
-    position: relative;// Giving context to :before
-    &:before {
-      content: '\0023';
-      font-size: 75%;
-      font-weight: 300;
-      color: $gray-lighter;
-      position: absolute;
-      left: -.75em;
-    }
-  }
+  // TODO: figure out what to do with this
+  // a {
+  //   position: relative;// Giving context to :before
+  //   &:before {
+  //     content: '\0023';
+  //     font-size: 75%;
+  //     font-weight: 300;
+  //     color: $gray-lighter;
+  //     position: absolute;
+  //     left: -.75em;
+  //   }
+  // }
   small {
     font-weight: 300;
     color: $subheading-color;
