@@ -1,3 +1,5 @@
+// Base button styles
+
 .btn {
   font-family: $sans-serif-primary;
   font-weight: 300;
@@ -6,14 +8,65 @@
   @include border-radius(2px);
   color: $opaque-white;
   background-color: $gray-light;
-  &:hover { color: $white; }
-  &:active { /* TODO */ }
-  &.btn-red { background-color: $red; }
-  &.btn-orange { background-color: $orange; }
-  &.btn-yellow { background-color: $yellow; }
-  &.btn-green { background-color: $green; }
-  &.btn-blue { background-color: $blue; }
-  &.btn-purple { background-color: $purple; }
-  &.btn-pink { background-color: $pink; }
-  &.btn-dark { background-color: $gray-darker; }
+  &:hover, &:active { color: $white; }// For all buttons
+  &:hover { background-color: lighten($gray-light, $hover-lighten); }// To be overridden with additional classes
+  &:active { background-color: lighten($gray-light, $active-lighten); }// To be overridden with additional classes
+  &.btn-red { 
+    background-color: $red;
+    &:hover { background-color: lighten($red, $hover-lighten); }
+    &:active { background-color: lighten($red, $active-lighten); }
+  }
+  &.btn-orange { 
+    background-color: $orange;
+    &:hover { background-color: lighten($orange, $hover-lighten); }
+    &:active { background-color: lighten($orange, $active-lighten); }
+  }
+  &.btn-yellow { 
+    background-color: $yellow;
+    &:hover { background-color: lighten($yellow, $hover-lighten); }
+    &:active { background-color: lighten($yellow, $active-lighten); }
+  }
+  &.btn-green { 
+    background-color: $green;
+    &:hover { background-color: lighten($green, $hover-lighten); }
+    &:active { background-color: lighten($green, $active-lighten); }
+  }
+  &.btn-blue { 
+    background-color: $blue;
+    &:hover { background-color: lighten($blue, $hover-lighten); }
+    &:active { background-color: lighten($blue, $active-lighten); }
+  }
+  &.btn-purple { 
+    background-color: $purple;
+    &:hover { background-color: lighten($purple, $hover-lighten); }
+    &:active { background-color: lighten($purple, $active-lighten); }
+  }
+  &.btn-pink { 
+    background-color: $pink;
+    &:hover { background-color: lighten($pink, $hover-lighten); }
+    &:active { background-color: lighten($pink, $active-lighten); }
+  }
+  &.btn-dark { 
+    background-color: $gray-darker;
+    &:hover { background-color: lighten($gray-darker, $hover-lighten); }
+    &:active { background-color: lighten($gray-darker, $active-lighten); }
+  }
+}
+
+// Sizes
+
+.btn-large {
+  font-size: 120%;
+  padding: .3em .9em;
+}
+
+.btn-small {
+  font-size: 80%;
+  padding: .2em .6em;
+}
+
+// Glow effect
+
+.btn-glow {
+  
 }
