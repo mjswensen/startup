@@ -9,49 +9,21 @@
   text-decoration: none;
   @include border-radius(2px);
   color: $opaque-white;
-  background-color: $gray-light;
+  background-color: $main-gray;
   &:hover, &:active { color: $white; }// For all buttons
-  &:hover { background-color: lighten($gray-light, $hover-lighten); }// To be overridden with additional classes
-  &:active { background-color: lighten($gray-light, $active-lighten); }// To be overridden with additional classes
-  &.btn-red { 
-    background-color: $red;
-    &:hover { background-color: lighten($red, $hover-lighten); }
-    &:active { background-color: lighten($red, $active-lighten); }
-  }
-  &.btn-orange { 
-    background-color: $orange;
-    &:hover { background-color: lighten($orange, $hover-lighten); }
-    &:active { background-color: lighten($orange, $active-lighten); }
-  }
-  &.btn-yellow { 
-    background-color: $yellow;
-    &:hover { background-color: lighten($yellow, $hover-lighten); }
-    &:active { background-color: lighten($yellow, $active-lighten); }
-  }
-  &.btn-green { 
-    background-color: $green;
-    &:hover { background-color: lighten($green, $hover-lighten); }
-    &:active { background-color: lighten($green, $active-lighten); }
-  }
-  &.btn-blue { 
-    background-color: $blue;
-    &:hover { background-color: lighten($blue, $hover-lighten); }
-    &:active { background-color: lighten($blue, $active-lighten); }
-  }
-  &.btn-purple { 
-    background-color: $purple;
-    &:hover { background-color: lighten($purple, $hover-lighten); }
-    &:active { background-color: lighten($purple, $active-lighten); }
-  }
-  &.btn-pink { 
-    background-color: $pink;
-    &:hover { background-color: lighten($pink, $hover-lighten); }
-    &:active { background-color: lighten($pink, $active-lighten); }
+  &:hover { background-color: lighten($main-gray, $hover-lighten); }// To be overridden with additional classes
+  &:active { background-color: lighten($main-gray, $active-lighten); }// To be overridden with additional classes
+  @each $color in $accent-colors {
+    &.btn-#{nth($color, 1)} {
+      background-color: #{nth($color, 2)};
+      &:hover { background-color: lighten(nth($color, 2), $hover-lighten); }
+      &:active { background-color: lighten(nth($color, 2), $active-lighten); }
+    }
   }
   &.btn-dark { 
-    background-color: $gray-darker;
-    &:hover { background-color: lighten($gray-darker, $hover-lighten); }
-    &:active { background-color: lighten($gray-darker, $active-lighten); }
+    background-color: $main-gray-inverse;
+    &:hover { background-color: lighten($main-gray-inverse, $hover-lighten); }
+    &:active { background-color: lighten($main-gray-inverse, $active-lighten); }
   }
 }
 

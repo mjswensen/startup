@@ -2,6 +2,13 @@
  * Basic access to the color scheme.
  */
 
+// Color box, for simple accents
+
+.color-box {
+  background-color: $main-gray;// Default, to be overridden by .bg-<color>
+  @include border-radius(2px);
+}
+
 // Background & foreground colors
 
 @each $color in $all-colors {
@@ -9,8 +16,3 @@
   .fg-#{nth($color, 1)} { color: nth($color, 2); }
 }
 
-// Color box, for simple accents
-
-.color-box {
-  @include border-radius(2px);
-}
