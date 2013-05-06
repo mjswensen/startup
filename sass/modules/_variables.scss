@@ -1,12 +1,12 @@
 // Color scheme
 
-$black: #000000;
-$gray-darker: #222222;
-$gray-dark: #333333;
-$gray: #555555;
-$gray-light: #999999;
-$gray-lighter: #eeeeee;
 $white: #ffffff;
+$gray-lighter: #eeeeee;
+$gray-light: #999999;
+$gray: #555555;
+$gray-dark: #333333;
+$gray-darker: #222222;
+$black: #000000;
 
 $transparent-black: rgba(0,0,0,0.1);
 $transparent-white: rgba(255,255,255,0.1);
@@ -30,43 +30,79 @@ $blue: #2c7fb3;
 $purple: #6526a6;
 $pink: #d237ba;
 
-// Links
-
-$hover-lighten: 10%;
-$active-lighten: 20%;
-
 // Derivatives of accent colors
 
-// TODO: figure out a good way to do this.
-$red-lightness: lightness($red);
-$orange-lightness: lightness($orange);
-$yellow-lightness: lightness($yellow);
-$green-lightness: lightness($green);
-$blue-lightness: lightness($blue);
-$purple-lightness: lightness($purple);
-$pink-lightness: lightness($pink);
-
-$red-lighter: lighten($red, ($red-lightness * 0.9));
+$red-lighter: lighten($red, (lightness($red) * 0.9));
 $red-light: lighten($red, 15%);
-$red-dark: darken($red, 50%);
-$orange-lighter: lighten($orange, ($orange-lightness * 0.9));
+$red-dark: darken($red, 10%);
+$orange-lighter: lighten($orange, (lightness($orange) * 0.65));
 $orange-light: lighten($orange, 15%);
-$orange-dark: darken($orange, 50%);
-$yellow-lighter: lighten($yellow, ($yellow-lightness * 0.9));
+$orange-dark: darken($orange, 10%);
+$yellow-lighter: lighten($yellow, (lightness($yellow) * 0.45));
 $yellow-light: lighten($yellow, 15%);
-$yellow-dark: darken($yellow, 50%);
-$green-lighter: lighten($green, ($green-lightness * 0.9));
+$yellow-dark: darken($yellow, 10%);
+$green-lighter: lighten($green, (lightness($green) * 0.9));
 $green-light: lighten($green, 15%);
-$green-dark: darken($green, 50%);
-$blue-lighter: lighten($blue, ($blue-lightness * 0.9));
+$green-dark: darken($green, 10%);
+$blue-lighter: lighten($blue, (lightness($blue) * 0.9));
 $blue-light: lighten($blue, 15%);
-$blue-dark: darken($blue, 50%);
-$purple-lighter: lighten($purple, ($purple-lightness * 0.9));
+$blue-dark: darken($blue, 10%);
+$purple-lighter: lighten($purple, (lightness($purple) * 0.9));
 $purple-light: lighten($purple, 15%);
-$purple-dark: darken($purple, 50%);
-$pink-lighter: lighten($pink, ($pink-lightness * 0.9));
+$purple-dark: darken($purple, 10%);
+$pink-lighter: lighten($pink, (lightness($pink) * 0.65));
 $pink-light: lighten($pink, 15%);
-$pink-dark: darken($pink, 50%);
+$pink-dark: darken($pink, 10%);
+
+// Color lists
+
+$grayscale-colors: (
+  white $white,
+  gray-lighter $gray-lighter,
+  gray-light $gray-light,
+  gray $gray,
+  gray-dark $gray-dark,
+  gray-darker $gray-darker,
+  black $black
+);
+
+$accent-colors: (
+  red $red,
+  orange $orange,
+  yellow $yellow,
+  green $green,
+  blue $blue,
+  purple $purple,
+  pink $pink
+);
+
+$derivative-colors: (
+  red-lighter $red-lighter,
+  red-light $red-light,
+  red-dark $red-dark,
+  orange-lighter $orange-lighter,
+  orange-light $orange-light,
+  orange-dark $orange-dark,
+  yellow-lighter $yellow-lighter,
+  yellow-light $yellow-light,
+  yellow-dark $yellow-dark,
+  green-lighter $green-lighter,
+  green-light $green-light,
+  green-dark $green-dark,
+  blue-lighter $blue-lighter,
+  blue-light $blue-light,
+  blue-dark $blue-dark,
+  purple-lighter $purple-lighter,
+  purple-light $purple-light,
+  purple-dark $purple-dark,
+  pink-lighter $pink-lighter,
+  pink-light $pink-light,
+  pink-dark $pink-dark
+);
+
+$main-colors: join($accent-colors, $derivative-colors, comma);
+
+$all-colors: join($grayscale-colors, $main-colors, comma);
 
 // Typography
 
@@ -76,6 +112,11 @@ $monospaced: "Ubuntu Mono", "Courier New", monospace;
 
 $base-font-size: 16px;
 $base-line-height: 22px;
+
+// Links
+
+$hover-lighten: 10%;
+$active-lighten: 20%;
 
 // Layout and grid, see _layouts.scss
 
