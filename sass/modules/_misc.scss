@@ -4,11 +4,7 @@ hr {
   background-color: $gray-lighter;
   @include border-radius(.125em);
   margin: 4em 0;
-  &.hr-red { background-color: $red-lighter; }
-  &.hr-orange { background-color: $orange-lighter; }
-  &.hr-yellow { background-color: $yellow-lighter; }
-  &.hr-green { background-color: $green-lighter; }
-  &.hr-blue { background-color: $blue-lighter; }
-  &.hr-purple { background-color: $purple-lighter; }
-  &.hr-pink { background-color: $pink-lighter; }
+  @each $color in $all-colors {
+    &.hr-#{nth($color, 1)} { background-color: #{nth($color, 2)}; }
+  }
 }
