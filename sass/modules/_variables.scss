@@ -60,47 +60,47 @@ $pink-dark: darken($pink, 10%);
 // Color lists
 
 $grayscale-colors: (
-  white $white,
-  gray-lighter $gray-lighter,
-  gray-light $gray-light,
-  gray $gray,
-  gray-dark $gray-dark,
-  gray-darker $gray-darker,
-  black $black
+  "white" $white,
+  "gray-lighter" $gray-lighter,
+  "gray-light" $gray-light,
+  "gray" $gray,
+  "gray-dark" $gray-dark,
+  "gray-darker" $gray-darker,
+  "black" $black
 );
 
 $accent-colors: (
-  red $red,
-  orange $orange,
-  yellow $yellow,
-  green $green,
-  blue $blue,
-  purple $purple,
-  pink $pink
+  "red" $red,
+  "orange" $orange,
+  "yellow" $yellow,
+  "green" $green,
+  "blue" $blue,
+  "purple" $purple,
+  "pink" $pink
 );
 
 $derivative-colors: (
-  red-lighter $red-lighter,
-  red-light $red-light,
-  red-dark $red-dark,
-  orange-lighter $orange-lighter,
-  orange-light $orange-light,
-  orange-dark $orange-dark,
-  yellow-lighter $yellow-lighter,
-  yellow-light $yellow-light,
-  yellow-dark $yellow-dark,
-  green-lighter $green-lighter,
-  green-light $green-light,
-  green-dark $green-dark,
-  blue-lighter $blue-lighter,
-  blue-light $blue-light,
-  blue-dark $blue-dark,
-  purple-lighter $purple-lighter,
-  purple-light $purple-light,
-  purple-dark $purple-dark,
-  pink-lighter $pink-lighter,
-  pink-light $pink-light,
-  pink-dark $pink-dark
+  "red-lighter" $red-lighter,
+  "red-light" $red-light,
+  "red-dark" $red-dark,
+  "orange-lighter" $orange-lighter,
+  "orange-light" $orange-light,
+  "orange-dark" $orange-dark,
+  "yellow-lighter" $yellow-lighter,
+  "yellow-light" $yellow-light,
+  "yellow-dark" $yellow-dark,
+  "green-lighter" $green-lighter,
+  "green-light" $green-light,
+  "green-dark" $green-dark,
+  "blue-lighter" $blue-lighter,
+  "blue-light" $blue-light,
+  "blue-dark" $blue-dark,
+  "purple-lighter" $purple-lighter,
+  "purple-light" $purple-light,
+  "purple-dark" $purple-dark,
+  "pink-lighter" $pink-lighter,
+  "pink-light" $pink-light,
+  "pink-dark" $pink-dark
 );
 
 $main-colors: join($accent-colors, $derivative-colors, comma);
@@ -128,6 +128,8 @@ $grid-num-columns: 12;
 $grid-column-width-with-gutter: ($grid-fixed-width / $grid-num-columns);
 $grid-gutter-width: 10px;
 $grid-column-width: $grid-column-width-with-gutter - ($grid-gutter-width * 2);
+$grid-row-height: $grid-column-width;
+$grid-row-height-with-gutter: $grid-column-width-with-gutter;
 
 // Misc.
 

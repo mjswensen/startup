@@ -20,12 +20,12 @@
         padding-left: $i * $grid-column-width-with-gutter;
       }
       .row-#{$i} {
-        min-height: $i * $grid-column-width-with-gutter - $grid-gutter-width * 2;
-        height: $i * $grid-column-width-with-gutter - $grid-gutter-width * 2;
+        min-height: $i * $grid-row-height-with-gutter - $grid-gutter-width * 2;
+        height: $i * $grid-row-height-with-gutter - $grid-gutter-width * 2;
         margin: $grid-gutter-width;
         &.row-force {
           overflow: hidden;
-          max-height: $i * $grid-column-width-with-gutter - $grid-gutter-width * 2;
+          max-height: $i * $grid-row-height-with-gutter - $grid-gutter-width * 2;
         }
       }
       $i: $i + 1;

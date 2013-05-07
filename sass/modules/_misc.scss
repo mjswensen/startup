@@ -1,7 +1,7 @@
 hr {
   border: 0;
   height: .25em;
-  background-color: $gray-lighter;
+  background-color: $gray-lighter;// Default
   @include border-radius(.125em);
   margin: 4em 0;
   @each $color in $all-colors {

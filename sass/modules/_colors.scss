@@ -2,17 +2,10 @@
  * Basic access to the color scheme.
  */
 
-// Color box, for simple accents
-
-.color-box {
-  background-color: $main-gray;// Default, to be overridden by .bg-<color>
-  @include border-radius(2px);
-}
-
-// Background & foreground colors
+// Background & foreground colors. We'll use the !important flag here to blow out any undesired specificity conflicts. If the user uses these, we want them to take effect.
 
 @each $color in $all-colors {
-  .bg-#{nth($color, 1)} { background-color: nth($color, 2); }
-  .fg-#{nth($color, 1)} { color: nth($color, 2); }
+  .bg-#{nth($color, 1)} { background-color: nth($color, 2) !important; }
+  .fg-#{nth($color, 1)} { color: nth($color, 2) !important; }
 }
 
