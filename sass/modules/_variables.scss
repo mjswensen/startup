@@ -134,3 +134,11 @@ $grid-row-height-with-gutter: $grid-column-width-with-gutter;
 // Misc.
 
 $small-border-radius: 2px;
+
+// Transitions
+
+$transition-durations: (
+  "fast" 0.1s,
+  "medium" 0.5s,
+  "slow" 1.5s
+);

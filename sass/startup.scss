@@ -8,12 +8,14 @@
 // Compass modules
 @import "compass/css3/border-radius";
 @import "compass/css3/background-clip";
+@import "compass/css3/transition";
 
 // Low level
 @import "modules/utilities";
 @import "modules/variables";
 @import "modules/typography";
 @import "modules/layout";
+@import "modules/transitions";
 
 // Mid level
 @import "modules/base";
@@ -24,4 +26,5 @@
 @import "modules/info-box";
 @import "modules/color-box";
 @import "modules/buttons";
+@import "modules/steps";
 @import "modules/misc";
