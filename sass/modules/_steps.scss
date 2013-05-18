@@ -22,6 +22,7 @@
     &:after {
       content: "\00BB";
       margin: 0 $grid-gutter-width;
+      font-weight: normal;
     }
     &:last-child {
       &:after {
