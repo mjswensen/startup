@@ -1,0 +1,13 @@
+.feature {
+  padding: 3em;
+  border-top: 1px solid $main-gray;
+  border-bottom: 1px solid $main-gray;
+  @include border-radius(1em);
+  h1, h2, h3, h4, h5, h6, p {
+    font-size: 2.5em;
+    line-height: 1em;
+    font-family: $sans-serif-primary;
+    font-weight: 300;
+    color: $main-gray;
+  }
+}
