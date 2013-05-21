@@ -1,7 +1,8 @@
 .feature {
   padding: 3em;
-  border-top: 1px solid $main-gray;
-  border-bottom: 1px solid $main-gray;
+  border-left: 2px solid $main-gray;
+  border-right: 2px solid $main-gray;
+  margin-bottom: $grid-gutter-width;
   @include border-radius(1em);
   h1, h2, h3, h4, h5, h6, p {
     font-size: 2.5em;
