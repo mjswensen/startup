@@ -1,0 +1,12 @@
+.droppable {
+  border: 5px dashed $gray-lighter;
+  border-radius: 3px;
+  height: 100%;
+  span {
+    color: $gray-light;
+    position: relative;
+    top: 33%;
+    display: block;
+    text-align: center;
+  }
+}
