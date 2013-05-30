@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<div class="fixed">
+  <div class="grid-container">
+    <div class="col-3">
+      <h2>Contents</h2>
+      <ul>
+        {% for doc in site.categories.docs %}
+        <li><a href="#{{ doc.title | remove:' ' }}">{{ doc.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="col-9">
+      {% for doc in site.categories.docs %}
+      <div id="{{ doc.title | remove:' ' }}">
+        {{ doc.content }}
+      </div>
+      <hr>
+      {% endfor %}
+    </div>
+  </div>
+</div>
