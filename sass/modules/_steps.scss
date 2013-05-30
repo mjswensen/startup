@@ -8,8 +8,8 @@
   .step {
     display: inline-block;
     .step-number {
-      font-family: $monospaced;
-      font-weight: 400;
+      font-family: $font-monospaced;
+      font-weight: $font-monospaced-normal;
       color: $white;
       background-color: $gray;
       display: inline-block;
@@ -22,7 +22,7 @@
     &:after {
       content: "\00BB";
       margin: 0 $grid-gutter-width;
-      font-weight: normal;
+      font-weight: $font-monospaced-normal;
     }
     &:last-child {
       &:after {
@@ -37,7 +37,8 @@
       }
     }
     &.step-current {
-      font-weight: bold;
+      font-weight: $font-secondary-bold;
+      .step-number { font-weight: $font-monospaced-bold; }
     }
   }
 }

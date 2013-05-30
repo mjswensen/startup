@@ -17,6 +17,7 @@
     border: 1px solid $gray;
     @include border-radius($small-border-radius);
     background-color: $gray-light;
+    color: $white;
   }
   p:last-child {
     margin-bottom: 0;

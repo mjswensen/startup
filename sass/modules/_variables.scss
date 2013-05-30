@@ -109,9 +109,18 @@ $all-colors: join($grayscale-colors, $main-colors, comma);
 
 // Typography
 
-$sans-serif-primary: "Titillium Web", Arial, sans-serif;
-$sans-serif-secondary: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-$monospaced: "Ubuntu Mono", "Courier New", monospace;
+$font-primary: "Titillium Web", Arial, sans-serif;
+$font-secondary: "Roboto", Arial, sans-serif;
+$font-monospaced: "Ubuntu Mono", "Courier New", monospace;
+
+$font-primary-normal: 300;
+$font-primary-bold: 600;
+
+$font-secondary-normal: 300;
+$font-secondary-bold: 500;
+
+$font-monospaced-normal: 400;
+$font-monospaced-bold: 700;
 
 $base-font-size: 16px;
 $base-line-height: 22px;

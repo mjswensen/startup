@@ -8,9 +8,9 @@
   vertical-align: middle;
   width: $grid-column-width;
   height: $grid-row-height;
-  font-family: $sans-serif-primary;
+  font-family: $font-primary;
+  font-weight: $font-primary-bold;
   font-size: 3em;
-  font-weight: 600;
   @include border-radius(2px);
   background-color: $main-gray;// Default, to be overridden by standard options below or by .bg-<color>
   color: $main-gray-inverse;// Default, to be overridden by standard options below or by .fg-<color>

@@ -3,11 +3,13 @@
  */
 
 // Import a few fonts from Google
-@import url("http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic,700italic|Titillium+Web:300,600");
+
+@import url("http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic,700italic|Titillium+Web:300,600|Roboto:300,300italic,500,500italic");
 
 body {
   font-size: $base-font-size;
-  font-family: $sans-serif-secondary;
+  font-family: $font-secondary;
+  font-weight: $font-secondary-normal;
 }
 
 // Headings
@@ -41,23 +43,23 @@ h6 {
 
 h1, h2, h3, h4, h5, h6 {
   margin: ($base-line-height / 2) 0;
-  font-family: $sans-serif-primary;
+  font-family: $font-primary;
   color: $heading-color;
-  font-weight: 600;
+  font-weight: $font-primary-bold;
   // TODO: figure out what to do with this
   // a {
   //   position: relative;// Giving context to :before
   //   &:before {
   //     content: '\0023';
   //     font-size: 75%;
-  //     font-weight: 300;
+  //     font-weight: $font-primary-normal;
   //     color: $gray-lighter;
   //     position: absolute;
   //     left: -.75em;
   //   }
   // }
   small {
-    font-weight: 300;
+    font-weight: $font-primary-normal;
     color: $subheading-color;
   }
 }
@@ -115,16 +117,20 @@ ol {
   }
 }
 
+li ul {
+  margin-bottom: 0;
+}
+
 li {
   color: $text-color;
   line-height: $base-line-height;
-  font-family: $sans-serif-secondary;
+  font-family: $font-secondary;
 }
 
 // Code
 
 code {
-  font-family: $monospaced;
+  font-family: $font-monospaced;
   padding: .125em;
   @include border-radius(2px);
   background-color: $gray-lighter;
@@ -137,7 +143,7 @@ em {
 }
 
 strong {
-  font-weight: bold;
+  font-weight: $font-secondary-bold;
 }
 
 small {
