@@ -10,6 +10,7 @@
   @include border-radius(2px);
   color: $opaque-white;
   background-color: $main-gray;
+  @extend .transition-faster;
   &:hover, &:active { color: $white; }// For all buttons
   &:hover { background-color: lighten($main-gray, $hover-lighten); }// To be overridden with additional classes
   &:active { background-color: lighten($main-gray, $active-lighten); }// To be overridden with additional classes
