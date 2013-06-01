@@ -4,14 +4,12 @@ headerColor: red
 ---
 <div class="fixed-thin">
   <div class="grid-container">
-    <div class="col-12">
-      <p>The goal of startup is to provide web developers a complete CSS solution so that they can get their app or site up and running quickly. Startup resides in a similar niche as <a href="http://twitter.github.io/bootstrap">Twitter Bootstrap</a> but with less emphasis on JavaScript components and greater emphasis on flexibility/control over style.</p>
-      <h2>Contents</h2>
-      <ul>
-        {% for doc in site.categories.docs %}
-        <li><a href="{{ doc.url }}">{{ doc.title }}</a></li>
-        {% endfor %}
-      </ul>
-    </div>
+    <p>The goal of startup is to provide web developers a complete CSS solution so that they can get their app or site up and running quickly. Startup resides in a similar niche as <a href="http://twitter.github.io/bootstrap">Twitter Bootstrap</a> but with less emphasis on JavaScript components and greater emphasis on flexibility/control over style.</p>
+    <h2>Contents</h2>
+    <ul>
+      {% for doc in site.categories.docs %}
+      <li><a href="{{ doc.url }}">{{ doc.title }}</a></li>
+      {% endfor %}
+    </ul>
   </div>
 </div>

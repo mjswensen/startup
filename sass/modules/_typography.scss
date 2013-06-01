@@ -127,15 +127,6 @@ li {
   font-family: $font-secondary;
 }
 
-// Code
-
-code {
-  font-family: $font-monospaced;
-  padding: .125em;
-  @include border-radius(2px);
-  background-color: $gray-lighter;
-}
-
 // Misc
 
 em {

@@ -1,0 +1,23 @@
+/**
+ * A widget for separating out content into various panels.
+ */
+
+.widget {
+  border-radius: 8px;
+  background-color: $white;
+  border: 1px solid $main-gray;
+  .widget-title {
+    font-family: $font-primary;
+    font-weight: $font-primary-normal;
+    font-size: 1.5em;
+    line-height: 1;
+    margin: 0;
+    padding: 10px;
+    color: $gray-darker;
+    border-bottom: 1px solid $main-gray;
+  }
+  .widget-body {
+    padding: 10px;
+  }
+  // TODO: add colors.
+}

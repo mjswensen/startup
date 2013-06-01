@@ -18,6 +18,7 @@
       color: $translucent-white;
     }
   }
+  // TODO: use a loop for these.
   &.header-red {
     background-color: $red;
     border-bottom-color: $red-light;

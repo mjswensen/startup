@@ -33,7 +33,8 @@
       @extend .pull-left;
       width: (($i - 1) * $grid-column-width-with-gutter + $grid-column-width);
       margin-right: $grid-gutter-width;
-      &:last-child {
+      margin-bottom: $grid-gutter-height;
+      &:last-child, &.last-col {
         margin-right: 0;
       }
     }

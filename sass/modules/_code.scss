@@ -5,6 +5,21 @@
  * From https://github.com/aahan/pygments-github-style
  */
 
+// Code
+
+pre {
+  white-space: pre-wrap;
+}
+
+code {
+  font-family: $font-monospaced;
+  padding: .125em;
+  @include border-radius(2px);
+  background-color: $gray-lighter;
+}
+
+// Syntax highlighting
+
 // TODO: refactor and customize this.
 
 // .highlight pre, pre, .highlight .hll { background-color: #f8f8f8; border: 1px solid #ccc; padding: 6px 10px; border-radius: 3px; }
