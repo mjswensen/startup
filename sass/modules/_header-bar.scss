@@ -8,6 +8,7 @@
   background-color: $gray;
   border-bottom-color: $gray-light;
   padding: 10px;
+  margin-bottom: $grid-gutter-height;
   @include background-clip();
   h1,h2,h3,h4,h5,h6 {
     margin: 0;

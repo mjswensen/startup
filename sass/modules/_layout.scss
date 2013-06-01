@@ -1,41 +1,52 @@
 /**
  * Grid layouts. Based on ideas from the 960 grid system (See http://960.gs),
- * though any width and number of columns can be used by altering
+ * and Twitter Bootstrap. Any width and number of columns can be used by altering
  * _variables.scss.
  */
 
 .fixed {
   width: $grid-fixed-width;
   margin: 0 auto;
-  .grid-container {
-    @extend .clearfix;
-    $i: 1;
-    @while $i <= $grid-num-columns {
-      .col-#{$i} {
-        @extend .pull-left;
-        margin: 0 $grid-gutter-width;
-        width: $i * $grid-column-width-with-gutter - $grid-gutter-width * 2;
-      }
-      .col-offset-#{$i} {
-        padding-left: $i * $grid-column-width-with-gutter;
-      }
-      .row-#{$i} {
-        min-height: $i * $grid-row-height-with-gutter - $grid-gutter-width * 2;
-        height: $i * $grid-row-height-with-gutter - $grid-gutter-width * 2;
-        margin: $grid-gutter-width;
-        &.row-force {
-          overflow: hidden;
-          max-height: $i * $grid-row-height-with-gutter - $grid-gutter-width * 2;
-        }
-      }
-      .row-offset-#{$i} {
-        padding-top: $i * $grid-row-height-with-gutter;
-      }
-      $i: $i + 1;
-    }
-  }
+}
+
+.fixed-thin {
+  width: $grid-fixed-thin-width;
+  margin: 0 auto;
+}
+
+.fixed-wide {
+  width: $grid-fixed-wide-width;
+  margin: 0 auto;
 }
 
 .fluid {
-  // TODO
+  width: 100%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.grid-container {
+  @extend .clearfix;
+  $i: 1;
+  @while $i <= $grid-num-columns {
+    .col-#{$i} {
+      @extend .pull-left;
+      width: (($i - 1) * $grid-column-width-with-gutter + $grid-column-width);
+      margin-right: $grid-gutter-width;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    .col-offset-#{$i} {
+      margin-left: ($i * $grid-column-width-with-gutter);
+    }
+    .row-#{$i} {
+      height: (($i - 1) * $grid-row-height-with-gutter + $grid-row-height);
+      margin-bottom: $grid-gutter-height;
+    }
+    .row-offset-#{$i} {
+      margin-top: ($i * $grid-row-height-with-gutter);
+    }
+    $i: $i + 1;
+  }
 }

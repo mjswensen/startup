@@ -6,7 +6,7 @@
   display: table-cell;
   text-align: center;
   vertical-align: middle;
-  width: $grid-column-width;
+  @extend .col-1;
   height: $grid-row-height;
   font-family: $font-primary;
   font-weight: $font-primary-bold;

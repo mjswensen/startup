@@ -133,12 +133,25 @@ $active-lighten: 20%;
 // Layout and grid, see _layouts.scss
 
 $grid-fixed-width: 960px;
+$grid-fixed-thin-width: 500px;
+$grid-fixed-wide-width: 1080px;
+
+$grid-width: 100%;
 $grid-num-columns: 12;
-$grid-column-width-with-gutter: ($grid-fixed-width / $grid-num-columns);
-$grid-gutter-width: 10px;
-$grid-column-width: $grid-column-width-with-gutter - ($grid-gutter-width * 2);
-$grid-row-height: $grid-column-width;
-$grid-row-height-with-gutter: $grid-column-width-with-gutter;
+
+$grid-gutter-width: 2%;
+$grid-column-width: (($grid-width - ($grid-num-columns - 1) * $grid-gutter-width) / $grid-num-columns);
+$grid-column-width-with-gutter: ($grid-column-width + $grid-gutter-width);
+
+$grid-gutter-height: (($grid-gutter-width / 100%) * $grid-fixed-width);// Heights based on 960px grid.
+$grid-row-height: (($grid-column-width / 100%) * $grid-fixed-width);
+$grid-row-height-with-gutter: ((($grid-column-width + $grid-gutter-width) / 100%) * $grid-fixed-width);
+
+// $grid-column-width-with-gutter: ($grid-fixed-width / $grid-num-columns);
+// $grid-gutter-width: 10px;
+// $grid-column-width: $grid-column-width-with-gutter - ($grid-gutter-width * 2);
+// $grid-row-height: $grid-column-width;
+// $grid-row-height-with-gutter: $grid-column-width-with-gutter;
 
 // Misc.
 

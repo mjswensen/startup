@@ -3,7 +3,7 @@
   @include border-radius($small-border-radius);
   background-color: $gray-lighter;
   padding: 2em 1em 1em;
-  margin-bottom: $grid-gutter-width;
+  margin-bottom: $grid-gutter-height;
   position: relative;// For positioning context
   .info-box-title {
     position: absolute;
