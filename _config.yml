@@ -2,5 +2,4 @@ exclude: ['LICENSE.md', 'README.md', 'config.rb', 'sass']
 
 permalink: ':title/'
 
-url: 'http://mjswensen.github.io'
-baseurl: '/startup/'
+baseurl: '/startup'

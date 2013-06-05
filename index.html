@@ -8,7 +8,7 @@ headerColor: red
     <h2>Contents</h2>
     <ul>
       {% for doc in site.categories.docs %}
-      <li><a href="{{ doc.url }}">{{ doc.title }}</a></li>
+      <li><a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></li>
       {% endfor %}
     </ul>
   </div>
