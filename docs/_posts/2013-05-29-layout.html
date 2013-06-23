@@ -5,6 +5,110 @@ headerColor: blue
 <div class="fluid">
   <div class="page-heading">
     <h1>Layout</h1>
-    <p>Coming soon...</p>
+  </div>
+  <h2>Grid System</h2>
+  <p>Layouts are controlled with column and row classes with appropriate numbers appended. The grid is based on a 12-column layout, and is percent-based. Wrap your layout in a <code>.grid-container</code>.</p>
+  <h3>Columns</h3>
+  <div class="grid-container">
+    <div class="col-3 row-4 bg-blue-lighter">
+      <p class="center"><code>.col-3</code></p>
+    </div>
+    <div class="col-7 row-4 bg-blue-lighter">
+      <p class="center"><code>.col-7</code></p>
+    </div>
+    <div class="col-2 row-4 bg-blue-lighter">
+      <p class="center"><code>.col-2</code></p>
+    </div>
+  </div>
+  <h3>Rows</h3>
+  <div class="grid-container">
+    <div class="col-2 row-1 bg-blue-lighter">
+      <p class="center"><code>.row-1</code></p>
+    </div>
+    <div class="col-2 row-2 bg-blue-lighter">
+      <p class="center"><code>.row-2</code></p>
+    </div>
+    <div class="col-2 row-3 bg-blue-lighter">
+      <p class="center"><code>.row-3</code></p>
+    </div>
+    <div class="col-2 row-4 bg-blue-lighter">
+      <p class="center"><code>.row-4</code></p>
+    </div>
+    <div class="col-2 row-5 bg-blue-lighter">
+      <p class="center"><code>.row-5</code></p>
+    </div>
+    <div class="col-2 row-6 bg-blue-lighter">
+      <p class="center"><code>.row-6</code></p>
+    </div>
+  </div>
+  <p>Note: row height for all layout widths is based on the column width for a grid wrapped in a <a href="#containers">960-pixel-wide container</a>.</p>
+  <h2>Multiple Rows</h2>
+  <p>To include multiple rows within a single <code>.grid-container</code>, include the <code>last-col</code> class on the last elements of a row. This isn't necessary if the <code>.grid-container</code> wraps only one row in your layout.</p>
+  <div class="grid-container">
+    <div class="col-4 row-1 bg-blue-lighter">
+      <p class="center"><code>.col-4.row-1</code></p>
+    </div>
+    <div class="col-4 row-1 bg-blue-lighter">
+      <p class="center"><code>.col-4.row-1</code></p>
+    </div>
+    <div class="col-4 last-col row-1 bg-blue-light">
+      <p class="center"><code>.col-4.last-col.row-1</code></p>
+    </div>
+    <div class="col-6 row-1 bg-blue-lighter">
+      <p class="center"><code>.col-6.row-1</code></p>
+    </div>
+    <div class="col-6 row-1 bg-blue-lighter">
+      <p class="center"><code>.col-6.row-1</code></p>
+    </div>
+  </div>
+  <h2 id="containers">Containers</h2>
+  <p>There are a few different container widths to choose from, using the following classes: <code>.fluid</code> (viewport width), <code>.fixed</code> (standard 960-pixel-wide horizontally centered container), <code>.fixed-thin</code> (500-pixel-wide horizontally centered container), and <code>.fixed-wide</code> (1080-pixel-wide horizontally centered container). The fluid-width container is used in the previous examples. Here are the fixed-width containers in action:</p>
+</div>
+<div class="fixed bg-gray-lighter">
+  <h3>Fixed</h3>
+  <div class="grid-container">
+    <div class="col-2 row-4 bg-blue-lighter">
+      <p class="center"><code>.col-2.row-4</code></p>
+    </div>
+    <div class="col-8 row-4 bg-blue-lighter">
+      <p class="center"><code>.col-2.row-8</code></p>
+    </div>
+    <div class="col-2 row-4 bg-blue-lighter">
+      <p class="center"><code>.col-2.row-4</code></p>
+    </div>
+  </div>
+</div>
+<div class="fluid">
+  <hr>
+</div>
+<div class="fixed-thin bg-gray-lighter">
+  <h3>Fixed Thin</h3>
+  <div class="grid-container">
+    <div class="col-2 row-4 bg-blue-lighter">
+      <p class="center"><code>.col-2.row-4</code></p>
+    </div>
+    <div class="col-8 row-4 bg-blue-lighter">
+      <p class="center"><code>.col-2.row-8</code></p>
+    </div>
+    <div class="col-2 row-4 bg-blue-lighter">
+      <p class="center"><code>.col-2.row-4</code></p>
+    </div>
+  </div>
+</div>
+<div class="fluid">
+  <hr>
+</div>
+<div class="fixed-wide bg-gray-lighter">
+  <h3>Fixed Wide</h3>
+  <div class="grid-container">
+    <div class="col-2 row-4 bg-blue-lighter">
+      <p class="center"><code>.col-2.row-4</code></p>
+    </div>
+    <div class="col-8 row-4 bg-blue-lighter">
+      <p class="center"><code>.col-2.row-8</code></p>
+    </div>
+    <div class="col-2 row-4 bg-blue-lighter">
+      <p class="center"><code>.col-2.row-4</code></p>
+    </div>
   </div>
 </div>

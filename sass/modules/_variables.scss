@@ -147,12 +147,6 @@ $grid-gutter-height: (($grid-gutter-width / 100%) * $grid-fixed-width);// Height
 $grid-row-height: (($grid-column-width / 100%) * $grid-fixed-width);
 $grid-row-height-with-gutter: ((($grid-column-width + $grid-gutter-width) / 100%) * $grid-fixed-width);
 
-// $grid-column-width-with-gutter: ($grid-fixed-width / $grid-num-columns);
-// $grid-gutter-width: 10px;
-// $grid-column-width: $grid-column-width-with-gutter - ($grid-gutter-width * 2);
-// $grid-row-height: $grid-column-width;
-// $grid-row-height-with-gutter: $grid-column-width-with-gutter;
-
 // Misc.
 
 $small-border-radius: 2px;
