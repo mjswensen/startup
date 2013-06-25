@@ -10,3 +10,31 @@ hr {
   &.hr-no-top { margin-top: 0; }
   &.hr-no-bottom { margin-bottom: 0; }
 }
+
+.end-sign-line {
+  text-align: center;
+  border-top-width: .25em;
+  border-top-style: solid;
+  border-top-color: $gray-lighter;
+  height: 1em;
+  margin: 1.5em auto 1em auto;
+  span {
+    font-family: $font-primary;
+    font-weight: $font-primary-bold;
+    height: 1em;
+    line-height: 1em;
+    position: relative;
+    top: -0.7em;
+    background-color: $white;
+    padding: 0 2.5em;
+    color: $gray-lighter;
+  }
+  @each $color in $all-colors {
+    &.end-sign-line-#{nth($color, 1)} {
+      border-top-color: nth($color, 2);
+      span {
+        color: nth($color, 2);
+      }
+    }
+  }
+}
