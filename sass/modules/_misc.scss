@@ -1,8 +1,8 @@
 hr {
   border: 0;
-  height: .25em;
+  height: 0.25em;
   background-color: $gray-lighter;// Default
-  @include border-radius(.125em);
+  @include border-radius(0.125em);
   margin: 4em 0;
   @each $color in $all-colors {
     &.hr-#{nth($color, 1)} { background-color: #{nth($color, 2)}; }
@@ -11,9 +11,11 @@ hr {
   &.hr-no-bottom { margin-bottom: 0; }
 }
 
+// Separator with text
+
 .end-sign-line {
   text-align: center;
-  border-top-width: .25em;
+  border-top-width: 0.25em;
   border-top-style: solid;
   border-top-color: $gray-lighter;
   height: 1em;
@@ -37,4 +39,28 @@ hr {
       }
     }
   }
+}
+
+// End sign
+
+.end-sign {
+  width: 0.75em;
+  height: 0.75em;
+  display: inline-block;
+  position: relative;
+  bottom: -0.0625em;
+  border: 1px solid $transparent-black;
+  @each $color in $all-colors {
+    &.end-sign-#{nth($color, 1)} {
+      background-color: nth($color, 2);
+    }
+  }
+}
+
+// Footnote
+
+.footnote {
+  font-style: italic;
+  font-size: 80%;
+  color: $main-gray;
 }

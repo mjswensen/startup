@@ -127,6 +127,20 @@ li {
   font-family: $font-secondary;
 }
 
+// Tables
+
+td, th {
+  font-family: $font-secondary;
+}
+
+td {
+  font-weight: $font-secondary-normal;
+}
+
+th {
+  font-weight: $font-secondary-bold;
+}
+
 // Misc
 
 em {
