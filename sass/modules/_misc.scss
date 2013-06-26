@@ -1,6 +1,6 @@
 hr {
   border: 0;
-  height: 0.25em;
+  height: 0.125em;
   background-color: $gray-lighter;// Default
   @include border-radius(0.125em);
   margin: 4em 0;
@@ -13,9 +13,9 @@ hr {
 
 // Separator with text
 
-.end-sign-line {
+.separator-with-text {
   text-align: center;
-  border-top-width: 0.25em;
+  border-top-width: 0.125em;
   border-top-style: solid;
   border-top-color: $gray-lighter;
   height: 1em;
@@ -32,7 +32,7 @@ hr {
     color: $gray-lighter;
   }
   @each $color in $all-colors {
-    &.end-sign-line-#{nth($color, 1)} {
+    &.separator-with-text-#{nth($color, 1)} {
       border-top-color: nth($color, 2);
       span {
         color: nth($color, 2);
@@ -44,11 +44,9 @@ hr {
 // End sign
 
 .end-sign {
-  width: 0.75em;
-  height: 0.75em;
+  width: 1ex;
+  height: 1ex;
   display: inline-block;
-  position: relative;
-  bottom: -0.0625em;
   border: 1px solid $transparent-black;
   @each $color in $all-colors {
     &.end-sign-#{nth($color, 1)} {

@@ -41,12 +41,18 @@
     .col-offset-#{$i} {
       margin-left: ($i * $grid-column-width-with-gutter);
     }
+    .col-push-#{$i} {
+      margin-right: ($i * $grid-column-width-with-gutter + $grid-gutter-width) !important;// !important for overriding the simple col and row classes.
+    }
     .row-#{$i} {
       height: (($i - 1) * $grid-row-height-with-gutter + $grid-row-height);
       margin-bottom: $grid-gutter-height;
     }
     .row-offset-#{$i} {
       margin-top: ($i * $grid-row-height-with-gutter);
+    }
+    .row-push-#{$i} {
+      margin-bottom: ($i * $grid-row-height-with-gutter + $grid-gutter-height) !important;// !important for overriding the simple col and row classes.
     }
     $i: $i + 1;
   }

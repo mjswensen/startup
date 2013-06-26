@@ -22,11 +22,11 @@
   p:last-child {
     margin-bottom: 0;
   }
-  &.append-next {
+  &.info-box-append-next {
     margin-bottom: -1px;
     border-bottom-color: $gray-light;
   }
-  &.without-title {
+  &.info-box-without-title {
     padding: 1em;
   }
 }
