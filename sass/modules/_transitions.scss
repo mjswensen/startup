@@ -1,5 +1,0 @@
-@each $dur in $transition-durations {
-  .transition-#{nth($dur, 1)} {
-    @include single-transition(all, nth($dur, 2));
-  }
-}

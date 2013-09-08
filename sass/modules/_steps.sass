@@ -1,0 +1,36 @@
+/**
+ * Provides path for users to track their progress through a process.
+ */
+
+.steps
+  text-align: center
+  padding: 2em 0
+  .step
+    display: inline-block
+    .step-number
+      font-family: $font-monospaced
+      font-weight: $font-monospaced-normal
+      color: $white
+      background-color: $gray
+      display: inline-block
+      padding: 0.2em 0.4em
+      border-radius: 1.2em
+      @each $color in $accent-colors
+        &.step-number-#{nth($color, 1)}
+          background-color: nth($color, 2)
+    &:after
+      content: "\00BB"
+      margin: 0 $grid-gutter-width
+      font-weight: $font-monospaced-normal
+    &:last-child
+      &:after
+        content: ""
+        margin: auto
+    &.step-done
+      color: $gray-lighter
+      .step-number
+        background-color: $gray-lighter
+    &.step-current
+      font-weight: $font-secondary-bold
+      .step-number
+        font-weight: $font-monospaced-bold

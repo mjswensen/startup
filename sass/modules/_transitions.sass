@@ -1,0 +1,4 @@
+@each $dur in $transition-durations
+  .transition-#{nth($dur, 1)}
+    -webkit-transition: all nth($dur, 2) ease
+    transition: all nth($dur, 2) ease

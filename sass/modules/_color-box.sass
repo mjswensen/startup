@@ -1,0 +1,20 @@
+/**
+ * Accented block.
+ */
+
+.color-box
+  display: table-cell
+  text-align: center
+  vertical-align: middle
+  @extend .col-1
+  height: $grid-row-height
+  font-family: $font-primary
+  font-weight: $font-primary-bold
+  font-size: 3em
+  border-radius: 2px
+  background-color: $main-gray// Default, to be overridden by standard options below or by .bg-<color>
+  color: $main-gray-inverse// Default, to be overridden by standard options below or by .fg-<color>
+  @each $color in $accent-colors
+    &.color-box-#{nth($color, 1)}
+      background-color: nth($color, 2)
+      color: $white

@@ -1,0 +1,56 @@
+hr
+  border: 0
+  height: 0.125em
+  background-color: $gray-lighter// Default
+  border-radius: 0.125em
+  margin: 4em 0
+  @each $color in $all-colors
+    &.hr-#{nth($color, 1)}
+      background-color: #{nth($color, 2)}
+  &.hr-no-top
+    margin-top: 0
+  &.hr-no-bottom
+    margin-bottom: 0
+
+// Separator with text
+
+.separator-with-text
+  text-align: center
+  border-top-width: 0.125em
+  border-top-style: solid
+  border-top-color: $gray-lighter
+  height: 1em
+  margin: 1.5em auto 1em auto
+  span
+    font-family: $font-primary
+    font-weight: $font-primary-bold
+    height: 1em
+    line-height: 1em
+    position: relative
+    top: -0.7em
+    background-color: $white
+    padding: 0 2.5em
+    color: $gray-lighter
+  @each $color in $all-colors
+    &.separator-with-text-#{nth($color, 1)}
+      border-top-color: nth($color, 2)
+      span
+        color: nth($color, 2)
+
+// End sign
+
+.end-sign
+  width: 1ex
+  height: 1ex
+  display: inline-block
+  border: 1px solid $transparent-black
+  @each $color in $all-colors
+    &.end-sign-#{nth($color, 1)}
+      background-color: nth($color, 2)
+
+// Footnote
+
+.footnote
+  font-style: italic
+  font-size: 80%
+  color: $main-gray

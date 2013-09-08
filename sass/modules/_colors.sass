@@ -4,8 +4,8 @@
 
 // Background & foreground colors. We'll use the !important flag here to blow out any undesired specificity conflicts. If the user uses these, we want them to take effect.
 
-@each $color in $all-colors {
-  .bg-#{nth($color, 1)} { background-color: nth($color, 2) !important; }
-  .fg-#{nth($color, 1)} { color: nth($color, 2) !important; }
-}
-
+@each $color in $all-colors
+  .bg-#{nth($color, 1)}
+    background-color: nth($color, 2) !important
+  .fg-#{nth($color, 1)}
+    color: nth($color, 2) !important
