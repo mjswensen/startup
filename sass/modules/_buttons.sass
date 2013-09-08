@@ -11,22 +11,22 @@
   color: $opaque-white
   background-color: $main-gray
   @extend .transition-faster
-  &:hover, &:active
+  &:hover, &:focus, &:active
     color: $white// For all buttons
-  &:hover
+  &:hover, &:focus
     background-color: lighten($main-gray, $hover-lighten)// To be overridden with additional classes
   &:active
     background-color: lighten($main-gray, $active-lighten)// To be overridden with additional classes
   @each $color in $accent-colors
     &.btn-#{nth($color, 1)}
       background-color: #{nth($color, 2)}
-      &:hover
+      &:hover, &:focus
         background-color: lighten(nth($color, 2), $hover-lighten)
       &:active
         background-color: lighten(nth($color, 2), $active-lighten)
   &.btn-dark
     background-color: $main-gray-inverse
-    &:hover
+    &:hover, &:focus
       background-color: lighten($main-gray-inverse, $hover-lighten)
     &:active
       background-color: lighten($main-gray-inverse, $active-lighten)

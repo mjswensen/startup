@@ -1,0 +1,18 @@
+a
+  text-decoration: none
+  &:link
+    color: $blue
+  &:visited
+    color: $purple
+  &:hover, &:focus
+    color: lighten($blue, $hover-lighten)
+  &:active
+    color: lighten($blue, $active-lighten)
+  @each $color in $accent-colors
+    &.link-#{nth($color, 1)}
+      &:link, &:visited
+        color: #{nth($color, 2)}
+      &:hover, &:focus
+        color: lighten(nth($color, 2), $hover-lighten)
+      &:active
+        color: lighten(nth($color, 2), $active-lighten)
