@@ -8,6 +8,7 @@
 
 body
   font-size: $base-font-size
+  line-height: $base-line-height
   font-family: $font-secondary
   font-weight: $font-secondary-normal
 
@@ -15,15 +16,12 @@ body
 
 h1
   font-size: 3em
-  line-height: $base-line-height * 2
 
 h2
   font-size: 2em
-  line-height: $base-line-height * 2
 
 h3
   font-size: 1.5em
-  line-height: $base-line-height * 2
 
 h4
   font-size: 1.2em
@@ -35,7 +33,7 @@ h6
   font-size: 0.8em
 
 h1, h2, h3, h4, h5, h6
-  margin: ($base-line-height / 2) 0
+  margin: 0 0 0.5em
   font-family: $font-primary
   color: $heading-color
   font-weight: $font-primary-bold
@@ -62,16 +60,15 @@ h1, h2, h3, h4, h5, h6
 // Body copy
 
 p
-  line-height: $base-line-height
-  margin: 0 0 ($base-line-height / 2)
+  margin: 0 0 0.5em
   color: $text-color
 
 // Lists
 
 ul, ol
-  margin: 0 0 ($base-line-height / 2) 1.5em
+  margin: 0 0 0.5em 1.5em
   &.unstyled
-    margin: 0 0 ($base-line-height / 2) 0
+    margin: 0 0 0.5em 0
     list-style-type: none
   &.inline
     & > li
@@ -98,7 +95,6 @@ li ul
 
 li
   color: $text-color
-  line-height: $base-line-height
   font-family: $font-secondary
 
 // Tables
