@@ -16,3 +16,11 @@ a
         color: lighten(nth($color, 2), $hover-lighten)
       &:active
         color: lighten(nth($color, 2), $active-lighten)
+  // TODO: Check these before committing
+  &.link-gray
+    &:link, &:visited
+      color: $gray
+    &:hover, &:focus
+      color: $gray-light
+    &:active
+      color: $gray-lighter
