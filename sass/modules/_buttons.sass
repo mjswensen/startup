@@ -17,6 +17,8 @@
     background-color: lighten($main-gray, $hover-lighten)// To be overridden with additional classes
   &:active
     background-color: lighten($main-gray, $active-lighten)// To be overridden with additional classes
+    small
+      opacity: 0.5
   @each $color in $accent-colors
     &.btn-#{nth($color, 1)}
       background-color: #{nth($color, 2)}
